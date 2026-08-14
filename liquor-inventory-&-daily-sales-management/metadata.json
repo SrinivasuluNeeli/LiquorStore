@@ -1,0 +1,6 @@
+{
+  "name": "Liquor Inventory & Daily Sales Management",
+  "description": "Retail liquor store inventory, daily stock register, sales collection, stock receipts, expenses tracking, audit logs, and reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

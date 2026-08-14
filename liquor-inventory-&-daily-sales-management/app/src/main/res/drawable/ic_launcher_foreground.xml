@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Bottle silhouette -->
+    <path
+        android:fillColor="#D4A359"
+        android:pathData="M48,26 h12 v6 h-12 z M50,32 h8 v8 l8,10 v28 a4,4 0 0,1 -4,4 h-16 a4,4 0 0,1 -4,-4 v-28 l8,-10 z" />
+    <!-- Label rectangle -->
+    <path
+        android:fillColor="#F8E5C2"
+        android:pathData="M44,56 h20 v16 h-20 z" />
+</vector>

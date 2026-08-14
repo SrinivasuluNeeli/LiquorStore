@@ -1,0 +1,17 @@
+package com.example.data.local
+
+import androidx.room.*
+import com.example.data.model.AuditLog
+import kotlinx.coroutines.flow.Flow
+
+@Dao
+interface AuditDao {
+    @Query("SELECT * FROM audit_logs ORDER BY timestamp DESC LIMIT 1000")
+    fun getAllAuditLogs(): Flow<List<AuditLog>>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertAuditLog(log: AuditLog)
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertAll(logs: List<AuditLog>)
+}
